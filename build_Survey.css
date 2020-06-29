@@ -1,0 +1,67 @@
+* {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: lowercase;
+}
+
+header {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+p {
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+form {
+    display: block;
+    background-color: gray;
+    margin-right: 200px;
+    margin-left: 200px;
+    text-align: left;
+}
+
+label {
+    margin-left: 20px;
+}
+
+#name, #email, #number {
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+    margin-top: 0px;
+    margin-left: 20px;
+}
+
+.dropdownmenu {
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+    margin-top: 0px;
+    margin-left: 20px;
+}
+
+.radiomenu {
+    display: inline-block;
+    text-align: center;
+}
+
+.checklist {
+    display: inline-block;
+    text-align: center;
+}
+
+::placeholder {
+    text-align: left;
+}
+
+textarea {
+    display: inline-block;
+    text-align: center;
+    margin-left: 20px;
+}

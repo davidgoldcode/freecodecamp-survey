@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="build_Survey.css">
+</head>
+
+<!-- This is the header -->
+
+<header>
+    <h1 id="title">This is the title</h1>
+    <p id="description">This is just a short description of the survey</p>
+</header>
+
+
+<!-- This is the body -->
+<body>
+    <form id="survey-form">
+        <label for="name" class="labels" id="name-label">Your name:</label><br>
+        <input id="name" name="name" placeholder="Enter your name" required><br>
+        <label for="email"class="labels" id="name-label">Your email:</label><br>
+        <input id="email" name="email" type="email" placeholder="Enter your email" required><br>
+        <label for="number" class="labels" id="number-label">How old are you:</label><br>
+        <input id="number" name="number" type="number" min="1" max="99" placeholder="Age" required><br>
+        <div>
+            <p> Which of the following best describes you? </p>
+                <select id="dropdown" class="dropdownmenu" class="dropdown" required>
+                    <option value="fullTimeStudent">Full Time Student</option>
+                    <option value="partTimeStudent">Part Time Student</option>
+                    <option value="fullTimeLearner">Full Time Learner</option>
+                    <option value="preferNotToSay">Prefer Not to Say</option>
+                </select>
+        </div>
+        <div>
+            <p>Would you recommend FreeCodeCamp to others? </p>
+                <label>
+                    <input value="yes" class="radiomenu" type="radio" name="user-recommend">  Yes</input>
+                </label>
+                <label>
+                    <input value="no" class="radiomenu" type="radio" name="user-recommend">  No</input>
+                </label>
+                <label>
+                    <input value="Idk" class="radiomenu" type="radio" name="user-recommend">  I don't know</input>
+                </label>
+                <label>
+                    <input value="maybe" class="radiomenu" type="radio" name="user-recommend">  Maybe</input>
+                </label>
+        </div>
+        <div>
+            <p>If I had to do it over again, what subject do you wish you focused on more?</p>
+                <label>
+                    <input value="frontend" class="checklist" type="checkbox" name="frontend">  Front-End Development</input>
+                </label><br>
+                <label>
+                    <input value="backend" class="checklist" type="checkbox" name="backend">  Back-End Development</input>
+                </label><br>
+                <label>
+                    <input value="design" class="checklist" type="checkbox" name="design">  Design</input>
+                </label><br>
+                <label>
+                    <input value="accessibility" class="checklist" type="checkbox" name="accessibility">  Accessibility</input>
+                </label><br>
+                <label>
+                    <input value="projects" class="checklist" type="checkbox" name="projects">  Projects</input>
+                </label><br>
+
+        </div>
+        <div>
+            <p>Any additional comments?</p>
+            <textarea id="addtlcomments" class="addtlcomments" name="commentplaceholder d" placeholder="Type here..."></textarea>
+        </div>
+        <div>
+            <button id="submit" class="submitbutton" type="button">Submit</button>
+        </div>
+        
+    </form>
+</body>
+</html>
